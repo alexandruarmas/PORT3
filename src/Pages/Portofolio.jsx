@@ -208,6 +208,54 @@ const Portfolio = () => {
     }
   }, []);
 
+  // Fetch certificates
+  const fetchCertificates = useCallback(async () => {
+    try {
+      setLoading(true);
+      console.log("Starting to fetch certificates...");
+      
+      // Sample certificates list
+      const certificatesList = [
+        {
+          id: "meta-frontend",
+          title: "Meta Front-End Developer Professional Certificate",
+          image: "./PORT3/certificates/meta-frontend.svg",
+          date: "2024-01",
+          issuer: "Meta",
+          description: "Advanced front-end development certification covering React, responsive design, and modern web development practices."
+        },
+        {
+          id: "meta-backend",
+          title: "Meta Back-End Developer Professional Certificate",
+          image: "./PORT3/certificates/meta-backend.svg",
+          date: "2024-02",
+          issuer: "Meta",
+          description: "Comprehensive back-end development certification focusing on APIs, databases, and server-side programming."
+        },
+        {
+          id: "google-ux",
+          title: "Google UX Design Professional Certificate",
+          image: "./PORT3/certificates/google-ux.svg",
+          date: "2024-03",
+          issuer: "Google",
+          description: "Professional certification in user experience design, covering design thinking, wireframing, and prototyping."
+        }
+      ];
+      
+      console.log("Certificate list created:", certificatesList);
+      
+      // Set certificates
+      setCertificates(certificatesList);
+      console.log("Certificates state updated, current certificates:", certificatesList.length);
+      
+      setLoading(false);
+      console.log("Loading state set to false");
+    } catch (error) {
+      console.error("Error in fetchCertificates:", error);
+      setLoading(false);
+    }
+  }, []);
+
   useEffect(() => {
     // Initialize AOS with more subtle animations following Apple HIG
     AOS.init({
@@ -222,7 +270,8 @@ const Portfolio = () => {
     
     // Fetch data on component mount
     fetchProjects();
-  }, [fetchProjects]);
+    fetchCertificates();
+  }, [fetchProjects, fetchCertificates]);
 
   // Handle tab change
   const handleChange = (event, newValue) => {
@@ -349,7 +398,7 @@ const Portfolio = () => {
                 label={
                   <div className="flex items-center gap-2">
                     <Code className="w-5 h-5" />
-                    <span>Projects</span>
+                    <span>Portofolio</span>
                   </div>
                 }
                 {...a11yProps(1)}

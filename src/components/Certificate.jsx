@@ -15,15 +15,19 @@ const Certificate = ({ certificate }) => {
 		setIsLoading(true)
 		setHasError(false)
 		
+		console.log("Loading certificate image:", certificate.image)
+		
 		// Preload image
 		const img = new Image();
 		img.src = certificate.image;
 		
 		img.onload = () => {
+			console.log("Certificate image loaded successfully:", certificate.image)
 			setIsLoading(false);
 		};
 		
-		img.onerror = () => {
+		img.onerror = (error) => {
+			console.error("Error loading certificate image:", certificate.image, error);
 			setHasError(true);
 			setIsLoading(false);
 		};

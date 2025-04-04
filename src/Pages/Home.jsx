@@ -53,19 +53,33 @@ TechStack.propTypes = {
 
 TechStack.displayName = 'TechStack';
 
-const CTAButton = memo(({ href, text, icon: Icon }) => (
-  <a href={href}>
-    <button className="group relative w-[160px] h-11 bg-[#6366f1] rounded-lg text-white font-medium text-sm transition-all duration-300 hover:bg-[#5457d6] active:bg-[#4547c2] focus:outline-none focus:ring-2 focus:ring-[#6366f1]/50">
+const CTAButton = memo(({ text, icon: Icon }) => {
+  const handleClick = (e) => {
+    e.preventDefault();
+    if (text === 'Projects') {
+      window.open('https://github.com/alexandruarmas/', '_blank');
+    } else if (text === 'Contact') {
+      window.scrollTo({
+        top: document.documentElement.scrollHeight,
+        behavior: 'smooth'
+      });
+    }
+  };
+
+  return (
+    <button 
+      onClick={handleClick}
+      className="group relative w-[160px] h-11 bg-[#6366f1] rounded-lg text-white font-medium text-sm transition-all duration-300 hover:bg-[#5457d6] active:bg-[#4547c2] focus:outline-none focus:ring-2 focus:ring-[#6366f1]/50"
+    >
       <span className="absolute inset-0 flex items-center justify-center gap-2">
         <span>{text}</span>
         <Icon className={`w-4 h-4 ${text === 'Contact' ? 'group-hover:translate-x-1' : 'group-hover:rotate-45'} transform transition-all duration-300`} />
       </span>
     </button>
-  </a>
-));
+  );
+});
 
 CTAButton.propTypes = {
-  href: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
   icon: PropTypes.elementType.isRequired
 };
@@ -228,8 +242,8 @@ const Home = () => {
 
                 {/* CTA Buttons */}
                 <div className="flex flex-row gap-3 w-full justify-start" data-aos="fade-up" data-aos-delay="300" data-aos-offset="150">
-                  <CTAButton href="#Portofolio" text="Projects" icon={ExternalLink} />
-                  <CTAButton href="#Contact" text="Contact" icon={Mail} />
+                  <CTAButton text="Projects" icon={ExternalLink} />
+                  <CTAButton text="Contact" icon={Mail} />
                 </div>
 
                 {/* Social Links */}
