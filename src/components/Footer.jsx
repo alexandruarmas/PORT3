@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="text-center pb-4">
           <span className="block text-sm text-gray-500 dark:text-gray-400">
             © {currentYear}{" "}
-            <a href="/" className="hover:underline">
+            <a href="#/" className="hover:underline">
               Alexandru Armaș™
             </a>
             . All Rights Reserved.

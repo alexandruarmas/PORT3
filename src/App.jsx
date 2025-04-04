@@ -1,43 +1,51 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { useState, memo, useEffect } from 'react';
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { useState, memo, useEffect, lazy, Suspense } from 'react';
 import "./index.css";
 import "./styles/flame.css";
-import Home from "./Pages/Home";
-import About from "./Pages/About";
-import AnimatedBackground from "./components/Background";
-import Navbar from "./components/Navbar";
-import Portofolio from "./Pages/Portofolio";
-import ContactPage from "./Pages/Contact";
-import ProjectDetails from "./components/ProjectDetail";
-import { AnimatePresence } from 'framer-motion';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import PropTypes from 'prop-types';
 import LoadingScreen from './components/LoadingScreen';
 import Footer from './components/Footer';
 
+// Lazy load components
+const Home = lazy(() => import('./Pages/Home'));
+const About = lazy(() => import('./Pages/About'));
+const Portofolio = lazy(() => import('./Pages/Portofolio'));
+const ContactPage = lazy(() => import('./Pages/Contact'));
+const ProjectDetails = lazy(() => import('./components/ProjectDetail'));
+const AnimatedBackground = lazy(() => import('./components/Background'));
+const Navbar = lazy(() => import('./components/Navbar'));
+
+// Loading fallback component
+const LazyLoadingFallback = () => (
+  <div className="w-full h-screen flex items-center justify-center bg-gradient-to-b from-[#030014] to-[#010108]">
+    <div className="animate-pulse text-xl text-white/80 font-medium">Loading...</div>
+  </div>
+);
+
 const LandingPage = memo(({ showWelcome, setShowWelcome }) => {
   return (
     <>
-      <AnimatePresence mode="wait">
+      <Suspense fallback={<LazyLoadingFallback />}>
         {showWelcome && (
           <LoadingScreen onLoadingComplete={() => setShowWelcome(false)} />
         )}
-      </AnimatePresence>
 
-      {!showWelcome && (
-        <>
-          <Navbar />
-          <AnimatedBackground />
-          <Home />
-          <About />
-          <Portofolio />
-          <div className="mt-[-100px]">
-            <ContactPage />
-          </div>
-          <Footer />
-        </>
-      )}
+        {!showWelcome && (
+          <>
+            <Navbar />
+            <AnimatedBackground />
+            <Home />
+            <About />
+            <Portofolio />
+            <div className="mt-[-100px]">
+              <ContactPage />
+            </div>
+            <Footer />
+          </>
+        )}
+      </Suspense>
     </>
   );
 });
@@ -49,10 +57,10 @@ LandingPage.propTypes = {
 };
 
 const ProjectPageLayout = memo(() => (
-  <>
+  <Suspense fallback={<LazyLoadingFallback />}>
     <ProjectDetails />
     <Footer />
-  </>
+  </Suspense>
 ));
 
 ProjectPageLayout.displayName = 'ProjectPageLayout';
@@ -76,12 +84,12 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+    <Router>
       <Routes>
         <Route path="/" element={<LandingPage showWelcome={showWelcome} setShowWelcome={setShowWelcome} />} />
         <Route path="/project/:id" element={<ProjectPageLayout />} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 

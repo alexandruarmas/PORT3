@@ -2,7 +2,7 @@
 
 A sleek, responsive portfolio website with smooth animations and modern UI design. Built with React, Vite, and Tailwind CSS.
 
-![Portfolio Screenshot](https://i.ibb.co/rvKzjX1/portfolio-screenshot.png)
+![Portfolio Screenshot](https://i.postimg.cc/GpRncMyp/portofolio.png)
 
 ## ✨ Features
 
@@ -37,8 +37,8 @@ A sleek, responsive portfolio website with smooth animations and modern UI desig
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/portfolio-website.git
-   cd portfolio-website
+   git clone https://github.com/alexandruarmas/PORT3.git
+   cd PORT3
    ```
 
 2. Install dependencies:
@@ -120,21 +120,27 @@ vercel
    - Build command: `npm run build`
    - Publish directory: `dist`
 
+### Deploy to GitHub Pages
+
+```bash
+npm run deploy
+```
+
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/yourusername/portfolio-website/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/alexandruarmas/PORT3/issues).
 
 ## 📄 License
 
-This project is [MIT](LICENSE) licensed.
+This project is [Apache 2.0](LICENSE) licensed.
 
 ## 📬 Contact
 
-If you want to contact me, you can reach me at your-email@example.com or through social media links on the website.
+If you want to contact me, you can reach me at alexandruarmas02@gmail.com or through social media links on the website.
 
 ---
 
-Made with ❤️ by [Your Name]
+Made with ❤️ by Alexandru Armas
 
 ---
 
@@ -154,7 +160,7 @@ Ensure that you have already installed:
 1. **Download this project:**  
 
    ```bash  
-   git clone https://github.com/EkiZR/Portofolio_V5.git  
+   git clone https://github.com/alexandruarmas/PORT3.git  
    ```  
 
 2. **Install all dependencies:**  
@@ -229,6 +235,14 @@ To configure Firebase for this project, follow these steps:
 
 6. **Update `firebase.js` and `firebase-comment.js` Files:**  
    - Replace the `firebaseConfig` content with your Firebase configuration.  
+
+## GitHub Repository
+
+This project is hosted on GitHub at [https://github.com/alexandruarmas/PORT3](https://github.com/alexandruarmas/PORT3).
+
+## Live Demo
+
+You can see the live demo of this project at [https://alexandruarmas.github.io/PORT3/](https://alexandruarmas.github.io/PORT3/).
 
 ## React Router v7 Compatibility
 

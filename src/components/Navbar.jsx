@@ -191,12 +191,12 @@ const Navbar = () => {
             }`}>
                 <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
                     {/* Logo with Flame Effect */}
-                    <a href="#Home" className="relative">
+                    <a href="/" className="relative">
                         <FlameText text="MrArmaș" />
                     </a>
 
                     {/* Desktop Menu */}
-                    <nav className="hidden md:block">
+                    <nav className="hidden md:flex items-center space-x-8">
                         <ul className="flex space-x-8 items-center">
                             {navItems.map((item) => (
                                 <NavLink 
