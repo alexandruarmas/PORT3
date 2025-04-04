@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="820" height="1180" viewBox="0 0 820 1180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="820" height="1180" fill="#1A1B1E"/>
+  
+  <!-- App Container -->
+  <rect x="40" y="40" width="740" height="1100" rx="16" fill="#25262B"/>
+  
+  <!-- Header -->
+  <rect x="40" y="40" width="740" height="60" rx="16" fill="#2C2E33"/>
+  <rect x="60" y="50" width="300" height="40" rx="8" fill="#373A40"/>
+  
+  <!-- Weather Map -->
+  <rect x="60" y="120" width="700" height="400" rx="8" fill="#1E1F23"/>
+  
+  <!-- Current Weather -->
+  <rect x="60" y="540" width="340" height="580" rx="8" fill="#2C2E33"/>
+  
+  <!-- Forecast -->
+  <rect x="420" y="540" width="340" height="580" rx="8" fill="#2C2E33"/>
+  <rect x="440" y="560" width="300" height="160" rx="8" fill="#373A40"/>
+  <rect x="440" y="740" width="300" height="160" rx="8" fill="#7289DA"/>
+  <rect x="440" y="920" width="300" height="160" rx="8" fill="#373A40"/>
+</svg> 

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="#1A1B1E"/>
+  
+  <!-- App Container -->
+  <rect x="160" y="40" width="1600" height="1000" rx="16" fill="#25262B"/>
+  
+  <!-- Sidebar -->
+  <rect x="160" y="40" width="280" height="1000" rx="16" fill="#2C2E33"/>
+  
+  <!-- Navigation Items -->
+  <rect x="180" y="100" width="240" height="50" rx="8" fill="#373A40"/>
+  <rect x="180" y="160" width="240" height="50" rx="8" fill="#2C2E33"/>
+  <rect x="180" y="220" width="240" height="50" rx="8" fill="#2C2E33"/>
+  
+  <!-- Main Content -->
+  <rect x="480" y="40" width="1280" height="1000" rx="16" fill="#25262B"/>
+  
+  <!-- Board Columns -->
+  <rect x="500" y="100" width="300" height="800" rx="8" fill="#2C2E33"/>
+  <rect x="820" y="100" width="300" height="800" rx="8" fill="#2C2E33"/>
+  <rect x="1140" y="100" width="300" height="800" rx="8" fill="#2C2E33"/>
+  
+  <!-- Tasks -->
+  <rect x="520" y="140" width="260" height="120" rx="8" fill="#373A40"/>
+  <rect x="520" y="280" width="260" height="120" rx="8" fill="#373A40"/>
+  <rect x="840" y="140" width="260" height="120" rx="8" fill="#7289DA"/>
+  <rect x="1160" y="140" width="260" height="120" rx="8" fill="#373A40"/>
+</svg> 

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#030014"/>
+  
+  <!-- Header -->
+  <rect x="40" y="40" width="1120" height="60" rx="8" fill="#1C1C1E"/>
+  <circle cx="80" cy="70" r="20" fill="#4169E1"/>
+  <rect x="900" y="50" width="220" height="40" rx="20" fill="#2C2C2E"/>
+  
+  <!-- Left Sidebar -->
+  <rect x="40" y="120" width="280" height="640" rx="12" fill="#1C1C1E"/>
+  <rect x="60" y="140" width="240" height="50" rx="8" fill="#2C2C2E"/>
+  <rect x="60" y="210" width="240" height="50" rx="8" fill="#2C2C2E"/>
+  <rect x="60" y="280" width="240" height="50" rx="8" fill="#2C2C2E"/>
+  
+  <!-- Main Feed -->
+  <rect x="360" y="120" width="520" height="640" rx="12" fill="#1C1C1E"/>
+  
+  <!-- Post 1 -->
+  <rect x="380" y="140" width="480" height="180" rx="8" fill="#2C2C2E"/>
+  <circle cx="420" cy="180" r="20" fill="#4169E1"/>
+  <rect x="460" y="170" width="200" height="20" rx="4" fill="#38383A"/>
+  <rect x="400" y="220" width="440" height="80" rx="4" fill="#38383A"/>
+  
+  <!-- Post 2 -->
+  <rect x="380" y="340" width="480" height="180" rx="8" fill="#2C2C2E"/>
+  <circle cx="420" cy="380" r="20" fill="#4169E1"/>
+  <rect x="460" y="370" width="200" height="20" rx="4" fill="#38383A"/>
+  <rect x="400" y="420" width="440" height="80" rx="4" fill="#38383A"/>
+  
+  <!-- Right Sidebar -->
+  <rect x="920" y="120" width="240" height="640" rx="12" fill="#1C1C1E"/>
+  <rect x="940" y="140" width="200" height="120" rx="8" fill="#2C2C2E"/>
+  <rect x="940" y="280" width="200" height="120" rx="8" fill="#2C2C2E"/>
+  <rect x="940" y="420" width="200" height="120" rx="8" fill="#2C2C2E"/>
+</svg> 

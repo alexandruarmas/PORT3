@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000" height="800" viewBox="0 0 1000 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1000" height="800" fill="#030014"/>
+  
+  <!-- Header -->
+  <rect x="40" y="40" width="920" height="60" rx="8" fill="#1C1C1E"/>
+  <circle cx="80" cy="70" r="18" fill="#4169E1"/>
+  <rect x="740" y="50" width="180" height="40" rx="20" fill="#2C2C2E"/>
+  
+  <!-- Left Sidebar -->
+  <rect x="40" y="120" width="240" height="640" rx="12" fill="#1C1C1E"/>
+  <rect x="60" y="140" width="200" height="50" rx="8" fill="#2C2C2E"/>
+  <rect x="60" y="210" width="200" height="50" rx="8" fill="#2C2C2E"/>
+  <rect x="60" y="280" width="200" height="50" rx="8" fill="#2C2C2E"/>
+  
+  <!-- Main Feed -->
+  <rect x="300" y="120" width="440" height="640" rx="12" fill="#1C1C1E"/>
+  
+  <!-- Story Bar -->
+  <rect x="320" y="140" width="400" height="100" rx="8" fill="#2C2C2E"/>
+  <circle cx="360" cy="190" r="25" fill="#4169E1"/>
+  <circle cx="430" cy="190" r="25" fill="#2C2C2E"/>
+  <circle cx="500" cy="190" r="25" fill="#2C2C2E"/>
+  <circle cx="570" cy="190" r="25" fill="#2C2C2E"/>
+  <circle cx="640" cy="190" r="25" fill="#2C2C2E"/>
+  
+  <!-- Posts -->
+  <rect x="320" y="260" width="400" height="220" rx="8" fill="#2C2C2E"/>
+  <circle cx="350" cy="290" r="15" fill="#4169E1"/>
+  <rect x="380" y="280" width="200" height="20" rx="4" fill="#38383A"/>
+  <rect x="340" y="320" width="360" height="140" rx="4" fill="#38383A"/>
+  
+  <rect x="320" y="500" width="400" height="220" rx="8" fill="#2C2C2E"/>
+  <circle cx="350" cy="530" r="15" fill="#4169E1"/>
+  <rect x="380" y="520" width="200" height="20" rx="4" fill="#38383A"/>
+  <rect x="340" y="560" width="360" height="140" rx="4" fill="#38383A"/>
+  
+  <!-- Right Sidebar -->
+  <rect x="760" y="120" width="200" height="640" rx="12" fill="#1C1C1E"/>
+  <rect x="780" y="140" width="160" height="120" rx="8" fill="#2C2C2E"/>
+  <rect x="780" y="280" width="160" height="120" rx="8" fill="#2C2C2E"/>
+  <rect x="780" y="420" width="160" height="120" rx="8" fill="#2C2C2E"/>
+</svg> 

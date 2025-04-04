@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#030014"/>
+  
+  <!-- Sidebar -->
+  <rect x="40" y="40" width="220" height="720" rx="12" fill="#1C1C1E"/>
+  <circle cx="80" cy="80" r="20" fill="#4169E1"/>
+  <rect x="60" y="140" width="180" height="40" rx="8" fill="#2C2C2E"/>
+  <rect x="60" y="200" width="180" height="40" rx="8" fill="#2C2C2E"/>
+  <rect x="60" y="260" width="180" height="40" rx="8" fill="#2C2C2E"/>
+  
+  <!-- Main Content -->
+  <rect x="300" y="40" width="860" height="720" rx="12" fill="#1C1C1E"/>
+  
+  <!-- Stats Cards -->
+  <rect x="340" y="80" width="240" height="120" rx="8" fill="#4169E1"/>
+  <rect x="600" y="80" width="240" height="120" rx="8" fill="#2C2C2E"/>
+  <rect x="860" y="80" width="240" height="120" rx="8" fill="#2C2C2E"/>
+  
+  <!-- Chart Area -->
+  <rect x="340" y="240" width="760" height="300" rx="8" fill="#2C2C2E"/>
+  <path d="M 360 480 Q 460 380, 560 440 T 760 400 T 1060 360" stroke="#4169E1" strokeWidth="3" fill="none"/>
+  
+  <!-- Table -->
+  <rect x="340" y="580" width="760" height="140" rx="8" fill="#2C2C2E"/>
+  <rect x="360" y="600" width="720" height="1" fill="#38383A"/>
+  <rect x="360" y="640" width="720" height="1" fill="#38383A"/>
+  <rect x="360" y="680" width="720" height="1" fill="#38383A"/>
+</svg> 

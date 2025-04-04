@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="#1A1B1E"/>
+  
+  <!-- App Container -->
+  <rect x="160" y="40" width="1600" height="1000" rx="16" fill="#25262B"/>
+  
+  <!-- Sidebar -->
+  <rect x="160" y="40" width="280" height="1000" rx="16" fill="#2C2E33"/>
+  
+  <!-- Navigation -->
+  <rect x="180" y="60" width="240" height="50" rx="8" fill="#373A40"/>
+  <rect x="180" y="130" width="240" height="50" rx="8" fill="#2C2E33"/>
+  <rect x="180" y="200" width="240" height="50" rx="8" fill="#2C2E33"/>
+  
+  <!-- Main Content -->
+  <rect x="480" y="40" width="1280" height="1000" rx="16" fill="#25262B"/>
+  
+  <!-- Recipe Header -->
+  <rect x="500" y="60" width="1240" height="300" rx="8" fill="#1E1F23"/>
+  
+  <!-- Recipe Content -->
+  <rect x="500" y="380" width="800" height="640" rx="8" fill="#2C2E33"/>
+  
+  <!-- Sidebar Content -->
+  <rect x="1320" y="380" width="420" height="640" rx="8" fill="#2C2E33"/>
+  <rect x="1340" y="400" width="380" height="100" rx="8" fill="#373A40"/>
+  <rect x="1340" y="520" width="380" height="100" rx="8" fill="#7289DA"/>
+  <rect x="1340" y="640" width="380" height="100" rx="8" fill="#373A40"/>
+</svg> 
