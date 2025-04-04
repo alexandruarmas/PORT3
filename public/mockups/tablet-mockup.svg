@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000" height="800" viewBox="0 0 1000 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Tablet Frame -->
+  <defs>
+    <linearGradient id="tabletGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2C3E50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3498DB;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Tablet Frame -->
+  <rect x="100" y="50" width="800" height="600" rx="40" fill="#2C3E50"/>
+  <rect x="105" y="55" width="790" height="590" rx="35" fill="#1a1a1a"/>
+  
+  <!-- Screen Content Area (This will be replaced with actual content) -->
+  <rect x="110" y="60" width="780" height="580" rx="30" fill="#ffffff"/>
+  
+  <!-- Camera -->
+  <circle cx="500" cy="75" r="5" fill="#666"/>
+  <circle cx="500" cy="75" r="2" fill="#333"/>
+  
+  <!-- Home Button -->
+  <circle cx="500" cy="620" r="15" fill="#666" stroke="#2C3E50" stroke-width="2"/>
+  
+  <!-- Reflection Effect -->
+  <rect x="110" y="60" width="780" height="580" rx="30" fill="url(#tabletGradient)" opacity="0.1"/>
+</svg> 

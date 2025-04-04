@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="#1A1B1E"/>
+  
+  <!-- App Container -->
+  <rect x="160" y="40" width="1600" height="1000" rx="16" fill="#25262B"/>
+  
+  <!-- Sidebar -->
+  <rect x="160" y="40" width="280" height="1000" rx="16" fill="#2C2E33"/>
+  
+  <!-- Course Navigation -->
+  <rect x="180" y="100" width="240" height="50" rx="8" fill="#373A40"/>
+  <rect x="180" y="170" width="240" height="50" rx="8" fill="#2C2E33"/>
+  <rect x="180" y="240" width="240" height="50" rx="8" fill="#2C2E33"/>
+  
+  <!-- Main Content -->
+  <rect x="480" y="40" width="1280" height="1000" rx="16" fill="#25262B"/>
+  
+  <!-- Video Player -->
+  <rect x="500" y="60" width="1240" height="500" rx="8" fill="#1E1F23"/>
+  
+  <!-- Course Content -->
+  <rect x="500" y="580" width="800" height="440" rx="8" fill="#2C2E33"/>
+  
+  <!-- Quiz Section -->
+  <rect x="1320" y="580" width="420" height="440" rx="8" fill="#2C2E33"/>
+  <rect x="1340" y="600" width="380" height="80" rx="8" fill="#373A40"/>
+  <rect x="1340" y="700" width="380" height="80" rx="8" fill="#7289DA"/>
+  <rect x="1340" y="800" width="380" height="80" rx="8" fill="#373A40"/>
+</svg> 

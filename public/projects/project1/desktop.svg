@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#030014"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="1200" height="64" fill="#0F0F1A"/>
+  <circle cx="40" cy="32" r="20" fill="#7C3AED"/>
+  <text x="80" y="40" fill="white" font-family="Arial" font-size="18">AI Image Generator</text>
+  
+  <!-- Sidebar -->
+  <rect x="0" y="64" width="240" height="736" fill="#0F0F1A"/>
+  <rect x="20" y="84" width="200" height="40" rx="8" fill="#1F1F2E"/>
+  <text x="60" y="108" fill="#E5E7EB" font-family="Arial" font-size="14">Dashboard</text>
+  <rect x="20" y="134" width="200" height="40" rx="8" fill="#7C3AED"/>
+  <text x="60" y="158" fill="white" font-family="Arial" font-size="14">Generate</text>
+  <rect x="20" y="184" width="200" height="40" rx="8" fill="#1F1F2E"/>
+  <text x="60" y="208" fill="#E5E7EB" font-family="Arial" font-size="14">Gallery</text>
+  
+  <!-- Main Content -->
+  <rect x="260" y="84" width="920" height="696" rx="12" fill="#0F0F1A"/>
+  
+  <!-- Generation Controls -->
+  <rect x="280" y="104" width="880" height="160" rx="8" fill="#1F1F2E"/>
+  <text x="300" y="134" fill="white" font-family="Arial" font-size="16">Prompt</text>
+  <rect x="300" y="144" width="840" height="40" rx="6" fill="#2D2D3D"/>
+  <text x="320" y="168" fill="#9CA3AF" font-family="Arial" font-size="14">Enter your image description...</text>
+  <rect x="300" y="194" width="200" height="40" rx="6" fill="#7C3AED"/>
+  <text x="370" y="218" fill="white" font-family="Arial" font-size="14">Generate</text>
+  
+  <!-- Generated Images Grid -->
+  <rect x="280" y="284" width="280" height="280" rx="8" fill="#2D2D3D"/>
+  <rect x="580" y="284" width="280" height="280" rx="8" fill="#2D2D3D"/>
+  <rect x="280" y="584" width="280" height="280" rx="8" fill="#2D2D3D"/>
+  <rect x="580" y="584" width="280" height="280" rx="8" fill="#2D2D3D"/>
+  
+  <!-- Loading Indicator -->
+  <circle cx="880" y="424" r="40" stroke="#7C3AED" stroke-width="4" stroke-dasharray="80 30"/>
+</svg> 

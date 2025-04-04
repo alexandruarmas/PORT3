@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Desktop Frame -->
+  <defs>
+    <linearGradient id="frameGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2C3E50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3498DB;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Monitor Base -->
+  <path d="M500 650 L700 650 L650 750 L550 750 Z" fill="#2C3E50"/>
+  
+  <!-- Monitor Frame -->
+  <rect x="100" y="50" width="1000" height="600" rx="20" fill="#2C3E50"/>
+  <rect x="110" y="60" width="980" height="580" rx="15" fill="#1a1a1a"/>
+  
+  <!-- Screen Content Area (This will be replaced with actual content) -->
+  <rect x="120" y="70" width="960" height="560" rx="10" fill="#ffffff"/>
+  
+  <!-- Camera/Sensors -->
+  <circle cx="600" cy="65" r="3" fill="#666"/>
+  
+  <!-- Reflection Effect -->
+  <rect x="120" y="70" width="960" height="560" rx="10" fill="url(#frameGradient)" opacity="0.1"/>
+</svg> 
