@@ -345,7 +345,7 @@ const LoadingScreen = ({ onLoadingComplete }) => {
                     Developer
                   </span>{' '}
                   <span className="inline-block px-2 bg-clip-text text-transparent bg-gradient-to-r from-[#a855f7] via-[#6366f1] to-[#a855f7] animate-gradient with-text-shadow">
-                    Portofolio
+                    Portfolio
                   </span>
                 </motion.div>
               </h1>

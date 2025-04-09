@@ -229,7 +229,7 @@ const ContactPage = () => {
             >
               <p className="text-gray-400 mb-4">Looking for my resume?</p>
               <a 
-                href="/Alexandru_Armas_Resume.pdf"
+                href="/PORT3/Alexandru_Armas_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative inline-flex items-center gap-2 px-6 py-3 rounded-xl 

@@ -135,7 +135,7 @@ const AboutPage = () => {
   // Basic information data
   const basicInfo = useMemo(() => [
     { icon: UserCheck, title: "Full Name", value: "Alexandru Armaș" },
-    { icon: Coffee, title: "Age", value: "35 Years" },
+    { icon: Coffee, title: "Age", value: "33 Years" },
     { icon: Globe, title: "Location", value: "Romania, Timișoara" },
     { icon: Rocket, title: "Experience", value: "3+ Years" }
   ], []);
@@ -231,13 +231,12 @@ const AboutPage = () => {
             </div>
 
             <div data-aos="fade-up">
-              <a 
-                href="#Contact" 
-                className="inline-flex items-center gap-2 text-indigo-400 font-medium hover:text-indigo-300 transition-colors"
+              <span 
+                className="inline-flex items-center gap-2 text-indigo-400 font-medium hover:text-indigo-300 transition-colors cursor-pointer"
               >
                 LET&apos;S WORK TOGETHER
                 <ArrowUpRight className="w-4 h-4" />
-              </a>
+              </span>
             </div>
           </div>
         </div>
