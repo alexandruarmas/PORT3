@@ -1,4 +1,4 @@
-import{c as i,r as n,j as e,A as f,G as w,P as s}from"./index-443JwSw3.js";import{L as y,E as o,M as h}from"./mail-DZ5EMtlk.js";/**
+import{c as i,r as n,j as e,A as f,G as w,P as s}from"./index-BX3ohhej.js";import{L as y,E as o,M as h}from"./mail-CMdkWjlk.js";/**
  * @license lucide-react v0.454.0 - ISC
  *
  * This source code is licensed under the ISC license.
@@ -56,7 +56,7 @@ import{c as i,r as n,j as e,A as f,G as w,P as s}from"./index-443JwSw3.js";impor
                          hover:shadow-lg hover:scale-[1.02]`,"data-aos":"fade-up","data-aos-delay":"300",children:[e.jsx("div",{className:`absolute inset-0 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500\r
                               opacity-0 group-hover:opacity-20 transition-opacity duration-300\r
                               animate-gradient-xy`}),e.jsx(w,{className:"relative z-10 w-5 h-5 text-white"}),e.jsx("span",{className:"relative z-10 text-white",children:"View Github"}),e.jsx(o,{className:`relative z-10 w-4 h-4 text-white \r
-                                      transform group-hover:rotate-45 transition-transform duration-300`})]})]}),e.jsxs("div",{className:"mt-12 text-center","data-aos":"fade-up","data-aos-delay":"400",children:[e.jsx("p",{className:"text-gray-400 mb-4",children:"Looking for my resume?"}),e.jsxs("a",{href:"/Alexandru_Armas_Resume.pdf",target:"_blank",rel:"noopener noreferrer",className:`group relative inline-flex items-center gap-2 px-6 py-3 rounded-xl \r
+                                      transform group-hover:rotate-45 transition-transform duration-300`})]})]}),e.jsxs("div",{className:"mt-12 text-center","data-aos":"fade-up","data-aos-delay":"400",children:[e.jsx("p",{className:"text-gray-400 mb-4",children:"Looking for my resume?"}),e.jsxs("a",{href:"/PORT3/Alexandru_Armas_Resume.pdf",target:"_blank",rel:"noopener noreferrer",className:`group relative inline-flex items-center gap-2 px-6 py-3 rounded-xl \r
                          bg-white/10 border border-white/10\r
                          overflow-hidden font-medium transition-all duration-300 \r
                          hover:shadow-lg hover:scale-[1.02]`,children:[e.jsx("div",{className:`absolute inset-0 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500\r
