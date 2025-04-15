@@ -1,22 +1,22 @@
 // Service Worker for portfolio website
-const CACHE_NAME = 'portfolio-cache-v1';
+const CACHE_NAME = 'portfolio-cache-v2';
 const urlsToCache = [
-  '/PORT3/',
-  '/PORT3/index.html',
-  '/PORT3/assets/css/index-Yc8F_VLa.css',
-  '/PORT3/assets/index-Chc24z6y.js',
-  '/PORT3/Photo.png',
-  '/PORT3/icons/html.svg',
-  '/PORT3/icons/css.svg',
-  '/PORT3/icons/javascript.svg',
-  '/PORT3/icons/typescript.svg',
-  '/PORT3/icons/tailwind.svg',
-  '/PORT3/icons/nodejs.svg',
-  '/PORT3/icons/mui.svg',
-  '/PORT3/icons/bootstrap.svg',
-  '/PORT3/icons/firebase.svg',
-  '/PORT3/makbookimage.png',
-  '/PORT3/cherryos.jpg'
+  '/',
+  '/index.html',
+  '/assets/css/index-Yc8F_VLa.css',
+  '/assets/index-Chc24z6y.js',
+  '/Photo.png',
+  '/icons/html.svg',
+  '/icons/css.svg',
+  '/icons/javascript.svg',
+  '/icons/typescript.svg',
+  '/icons/tailwind.svg',
+  '/icons/nodejs.svg',
+  '/icons/mui.svg',
+  '/icons/bootstrap.svg',
+  '/icons/firebase.svg',
+  '/makbookimage.png',
+  '/cherryos.jpg'
 ];
 
 // Install the service worker and cache assets
@@ -48,6 +48,27 @@ self.addEventListener('activate', event => {
 
 // Serve cached content when offline
 self.addEventListener('fetch', event => {
+  // Handle PORT3 path prefix for backward compatibility
+  const url = new URL(event.request.url);
+  if (url.pathname.startsWith('/PORT3/')) {
+    // Create a new request with the modified URL
+    const newUrl = url.pathname.replace('/PORT3/', '/');
+    const newRequest = new Request(url.origin + newUrl, {
+      method: event.request.method,
+      headers: event.request.headers,
+      mode: event.request.mode,
+      credentials: event.request.credentials,
+      redirect: event.request.redirect,
+      cache: event.request.cache
+    });
+    
+    event.respondWith(
+      fetch(newRequest)
+        .catch(() => caches.match(newRequest))
+    );
+    return;
+  }
+
   event.respondWith(
     caches.match(event.request)
       .then(response => {
@@ -79,7 +100,7 @@ self.addEventListener('fetch', event => {
       .catch(() => {
         // If both cache and network fail, show a generic fallback
         if (event.request.url.indexOf('.html') > -1) {
-          return caches.match('/PORT3/index.html');
+          return caches.match('/index.html');
         }
       })
   );
