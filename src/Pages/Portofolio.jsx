@@ -186,8 +186,8 @@ const Portfolio = () => {
           title: "MakBook Simulator",
           description: "A modern web application that simulates the macOS desktop experience, built with Next.js and React. Experience the sleek design and functionality of macOS right in your web browser.",
           tags: ["Next.js", "React", "Tailwind CSS", "TypeScript", "Radix UI"],
-          image: "/PORT3/makbookimage.png", 
-          fallbackImage: "/PORT3/cherryos.jpg",
+          image: "/makbookimage.png",
+          fallbackImage: "/cherryos.jpg",
           github: "https://github.com/alexandruarmas/makbook-simulator",
           demo: "https://alexandruarmas.github.io/makbook-simulator/",
           date: "2023-04-02"

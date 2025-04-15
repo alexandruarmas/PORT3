@@ -191,7 +191,7 @@ const Navbar = () => {
             }`}>
                 <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
                     {/* Logo with Flame Effect */}
-                    <a href={window.location.origin + '/PORT3/'} className="relative">
+                    <a href={window.location.origin + '/'} className="relative">
                         <FlameText text="MrArmaș" />
                     </a>
 
