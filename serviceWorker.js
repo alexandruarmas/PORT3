@@ -1,10 +1,10 @@
 // Service Worker for portfolio website
-const CACHE_NAME = 'portfolio-cache-v2';
+const CACHE_NAME = 'portfolio-cache-v3';
 const urlsToCache = [
   '/',
   '/index.html',
-  '/assets/css/index-Yc8F_VLa.css',
-  '/assets/index-Chc24z6y.js',
+  '/assets/css/index-*.css',
+  '/assets/index-*.js',
   '/Photo.png',
   '/icons/html.svg',
   '/icons/css.svg',
@@ -48,27 +48,6 @@ self.addEventListener('activate', event => {
 
 // Serve cached content when offline
 self.addEventListener('fetch', event => {
-  // Handle PORT3 path prefix for backward compatibility
-  const url = new URL(event.request.url);
-  if (url.pathname.startsWith('/PORT3/')) {
-    // Create a new request with the modified URL
-    const newUrl = url.pathname.replace('/PORT3/', '/');
-    const newRequest = new Request(url.origin + newUrl, {
-      method: event.request.method,
-      headers: event.request.headers,
-      mode: event.request.mode,
-      credentials: event.request.credentials,
-      redirect: event.request.redirect,
-      cache: event.request.cache
-    });
-    
-    event.respondWith(
-      fetch(newRequest)
-        .catch(() => caches.match(newRequest))
-    );
-    return;
-  }
-
   event.respondWith(
     caches.match(event.request)
       .then(response => {
