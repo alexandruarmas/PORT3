@@ -136,7 +136,7 @@ This project is [Apache 2.0](LICENSE) licensed.
 
 ## 📬 Contact
 
-If you want to contact me, you can reach me at alexandruarmas02@gmail.com or through social media links on the website.
+If you want to contact me, you can reach me at contact@alexandruarmas.ro or through social media links on the website.
 
 ---
 

@@ -81,8 +81,8 @@ const ContactPage = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "alexandruarmas02@gmail.com",
-      href: "mailto:alexandruarmas02@gmail.com",
+      value: "contact@alexandruarmas.ro",
+      href: "mailto:contact@alexandruarmas.ro",
       delay: 100
     },
     {
@@ -178,7 +178,7 @@ const ContactPage = () => {
             
             <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
               <a 
-                href="mailto:alexandruarmas02@gmail.com"
+                href="mailto:contact@alexandruarmas.ro"
                 className="group relative inline-flex items-center gap-2 px-6 py-3 rounded-xl 
                          bg-white/10 border border-white/10
                          overflow-hidden font-medium transition-all duration-300 
