@@ -1,22 +1,22 @@
 // Service Worker for portfolio website
-const CACHE_NAME = 'portfolio-cache-v1';
+const CACHE_NAME = 'portfolio-cache-v2';
 const urlsToCache = [
-  '/PORT3/',
-  '/PORT3/index.html',
-  '/PORT3/assets/css/index-Yc8F_VLa.css',
-  '/PORT3/assets/index-Chc24z6y.js',
-  '/PORT3/Photo.png',
-  '/PORT3/icons/html.svg',
-  '/PORT3/icons/css.svg',
-  '/PORT3/icons/javascript.svg',
-  '/PORT3/icons/typescript.svg',
-  '/PORT3/icons/tailwind.svg',
-  '/PORT3/icons/nodejs.svg',
-  '/PORT3/icons/mui.svg',
-  '/PORT3/icons/bootstrap.svg',
-  '/PORT3/icons/firebase.svg',
-  '/PORT3/makbookimage.png',
-  '/PORT3/cherryos.jpg'
+  '/',
+  '/index.html',
+  '/assets/css/index-*.css',
+  '/assets/index-*.js',
+  '/Photo.png',
+  '/icons/html.svg',
+  '/icons/css.svg',
+  '/icons/javascript.svg',
+  '/icons/typescript.svg',
+  '/icons/tailwind.svg',
+  '/icons/nodejs.svg',
+  '/icons/mui.svg',
+  '/icons/bootstrap.svg',
+  '/icons/firebase.svg',
+  '/makbookimage.png',
+  '/cherryos.jpg'
 ];
 
 // Install the service worker and cache assets
@@ -79,7 +79,7 @@ self.addEventListener('fetch', event => {
       .catch(() => {
         // If both cache and network fail, show a generic fallback
         if (event.request.url.indexOf('.html') > -1) {
-          return caches.match('/PORT3/index.html');
+          return caches.match('/index.html');
         }
       })
   );
